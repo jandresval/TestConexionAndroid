@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.conexion.conexionandroid.MainActivity$PlaceholderFragment">
+
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="5"
+        android:rowCount="12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/webView"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Usuario:"
+            android:id="@+id/textView"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="2" />
+
+        <EditText
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_column="3"
+            android:layout_row="0" />
+
+        <Button
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="Conectar"
+            android:id="@+id/button"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:onClick="onClick" />
+
+        <ListView
+            android:layout_width="222dp"
+            android:layout_height="290dp"
+            android:id="@+id/listView"
+            android:layout_row="9"
+            android:layout_column="3" />
+
+        <WebView
+            android:layout_width="189dp"
+            android:layout_height="96dp"
+            android:id="@+id/webView"
+            android:layout_weight="0.28"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_row="10"
+            android:layout_column="3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+    </GridLayout>
+
+</RelativeLayout>
